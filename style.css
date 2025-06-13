@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+
+.container {
+    background: #0A0A0D;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.light-mode {
+  position: absolute;
+  top: 10px;right:10px;
+
+
+}
+.container.light {
+  background: whitesmoke;
+}
+
+
+/* LOGIN FORM AND SIGNUP FORM */
+
+form h4 {
+  font-weight: 300;
+  font-size: 50px;
+  text-align: center;
+  padding: 0 0 50px 0;
+  color: #D8D8DB;
+  user-select: none;
+}
+
+.container.light form h4 {
+  color: #0A0A0D;
+}
+
+form {
+  width: 98%;
+  height: 99vh;
+  background: #1E1E24;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container.light form {
+  background: #FFF;
+  box-shadow:  20px 20px 60px #d9d9d9,
+             -20px -20px 60px #ffffff;
+}
+
+form input {
+  width: 400px;
+  height: 40px;
+  margin-top: 10px;
+  border: 2px solid #5B5B63;
+  border-radius: 12px;
+  padding-left: 10px;
+  outline: none;
+  background: none;
+  caret-color: #FFFFFF;
+  color: #D8D8DB;
+}
+
+.container.light form input {
+  caret-color: #000;
+  color: #0A0A0D;
+}
+form input:hover {
+  border: 2px #D8D8DB solid;
+}
+
+form input:focus {
+  border: 2px #D8D8DB solid;
+}
+
+form input::placeholder {
+  color: #FFF;
+}
+
+.container.light form input::placeholder {
+  color: #0A0A0D;
+}
+
+
+
+form .remember-forgot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+form .remember-forgot a {
+  margin-top: 10px;
+  color: #3B82f6;
+}
+
+form .remember-forgot a:hover {
+  color: #3F66F9;
+}
+form .remember-me {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 10px;
+}
+form .remember-me label {
+  position: absolute;
+  width: 150px;
+  gap: 5px;
+  color: #D8D8DB;
+  left: 20px;
+  top: -1px;
+}
+
+.container.light form .remember-me label {
+  color: #0A0A0D;
+}
+
+form .remember-me input {
+  width: 15px;
+  cursor: pointer;
+  vertical-align: bottom;
+  position: absolute;
+
+}
+
+form .login-btn {
+  width: 150px;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  margin:20px 0;
+  height: 45px;
+  font-size: 17px;
+  cursor: pointer;
+  color: #FFFF;
+  background: #3B82f6 ;
+}
+
+.login-btn:hover {
+  background: #3F66F9 ;
+}
+
+.login-btn:active {
+  border: 2px solid #D8D8DB;
+  
+}
+
+form .dont-have-account {
+  color: #D8D8DB;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.container.light form .dont-have-account {
+  color:#0A0A0D;
+}
+
+.dont-have-account span {
+  cursor: pointer;
+  color: #3B82f6;
+}
+
+.dont-have-account span:hover {
+  color:#3F66F9;
+}
+
+
+
+
+
+/* ============ Tablet Devices ============ */
+@media screen and (max-width: 1024px) {
+
+    
+  
+}
+
+/* ============ Mobile Devices ============ */
+@media screen and (max-width: 600px) {
+  form {
+    width: 100%;
+    height: 100vh;
+  }
+  form input {
+    width: 300px
+  }
+  form .remember-forgot {
+    width: 300px
+  }
+}
+
+/* TABLES */
+
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Keywords" content="HTML, CSS, javaScript">
+    <meta name="author" content="Tumelo Radebe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div>
+            <button class="light-mode">Light Mode</button>
+        </div>
+  
+    <form id="login-form">
+        <h4>Sign In</h4>
+        <input type="text" name="email" class="user-input" id="login-email" placeholder="Email" required>
+    
+        <input type="password" class="user-input" name="password" id="login-password" placeholder="Password" required>
+       <section class="remember-forgot">
+            <div class="remember-me">
+                <input type="checkbox" name="remember-me" id="rememberMe" >
+                <label> 
+                    
+                    Remember Me
+                </label>
+            </div>
+            <a href="#">Forgot Pasword</a>
+       </section>
+        <button class="login-btn" type="button" id="login-btn">
+            Sign in
+        </button>
+        <button class="dont-have-account" type="button">
+            Don't have an account? <span class="toggle-form">Sign up</span>
+        </button>
+    </form>
+       
+
+    <form id="signup-form" style="display: none">
+        <h4>Sign Up</h4>
+        
+        <input type="text" name="email" class="user-input" id="signup-email" placeholder="Email">
+    
+        <input type="password" class="user-input" name="password" id="signup-password" placeholder="Password" style="margin-bottom: 50px;">
+      
+        <button class="login-btn" type="button" id="signup-btn">
+            Sign Up
+        </button>
+        <button class="dont-have-account" type="button">
+            Already have an account? <span class="toggle-form">Sign In</span>
+        </button>
+    </form>
+
+    </div>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <script type="module" src="script.js" ></script>
+</body>
+</html>
