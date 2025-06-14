@@ -70,7 +70,32 @@ if (rememberMe) {
 
 const containerDiv = document.querySelector(".container");
 const toggleLightMode = document.querySelector(".light-mode");
+const logoDiv = document.querySelector(".logo-div");
+
 
 toggleLightMode.addEventListener("click", () => {
     containerDiv.classList.toggle("light")
+    logoDiv.classList.toggle("light")
 })
+
+
+ const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });

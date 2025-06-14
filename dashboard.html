@@ -10,41 +10,100 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="container">
-        <div class="icons light-mode">
+    <div class="logo-div">
+        <h2>Finance Tracker</h2>
+ 
+    <div class="icons light-mode">
                 <i class='bx bxs-sun'></i>
                 <i class='bx bxs-moon'></i>
         </div>
+    </div>    
+    <div class="container">
+        
        <div class="dashboard-container">
-         
-        <nav>
-            <a href="dashboard.html">Finance Tracker</a>
-        </nav>
+        
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="profile">
+      <img src="user-avatar.png" alt="User Avatar" />
+      <h2>Mike William</h2>
+    </div>
+    <nav class="navigation">
+      <button class="nav-item active">Dashboard</button>
+      <button class="nav-item"><i class="bx bx-wallet"></i>Income</button>
+      <button class="nav-item"><i class="bx bx-dollar-circle"></i>Expense</button>
+      <button class="nav-item"><i class="bx bx-log-out"></i>Logout</button>
+    </nav>
+  </aside>
 
-        <section class="side">
-            <div class="profile">
-                <h3 class="user-name">Tumelo Radebe</h3>
-                <h3>Dashboard</h3>
-                <h2 class="month">Month: June</h2>
+  <!-- Main Content -->
+  <main class="main-content">
+    
+    <!-- Top Cards -->
+    <div class="summary-cards">
+      <div class="card total-balance">
+        <div class="icon purple"><i class="bx bx-card"></i></div>
+        <div class="info">
+          <p>Total Balance</p>
+          <h3>$91,100</h3>
+        </div>
+      </div>
+      <div class="card total-income">
+        <div class="icon orange"><i class="bx bx-wallet"></i></div>
+        <div class="info">
+          <p>Total Income</p>
+          <h3>$98,200</h3>
+        </div>
+      </div>
+      <div class="card total-expenses">
+        <div class="icon red"><i class="bx bx-dollar-circle"></i></div>
+        <div class="info">
+          <p>Total Expenses</p>
+          <h3>$7,100</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="bottom-section">
+      <!-- Recent Transactions -->
+      <div class="transactions">
+        <div class="header">
+          <h3>Recent Transactions</h3>
+          <button class="see-all">See All →</button>
+        </div>
+        <ul class="transaction-list">
+          <li class="transaction">
+            <div class="icon shopping"></div>
+            <div class="details">
+              <p>Shopping</p>
+              <span>17th Feb 2025</span>
             </div>
-            <div class="income">
-                <i class="bx bx-wallet"></i>
-                <h5>Income</h5>
-            </div>
-            <div class="expense">
-                <i class='bx bx-dollar-circle'></i>
-                <h5>Expense</h5>
-            </div>
-            <div class="logout">
-                <i class='bx bx-log-out'></i>
-                <h5>Logout</h5>
-            </div>
-        </section>
-       </div>
+            <span class="amount negative">- $430</span>
+          </li>
+          <!-- Repeat for each transaction... -->
+        </ul>
+      </div>
+
+      <!-- Financial Overview (Pie Chart) -->
+      <div class="financial-overview">
+        <h3>Financial Overview</h3>
+        <div class="chart">
+          <!-- Canvas or chart image goes here -->
+        </div>
+        <div class="legend">
+          <span class="dot purple"></span> Total Balance
+          <span class="dot red"></span> Total Expenses
+          <span class="dot orange"></span> Total Income
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
     </div>
    
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script type="module" src="script.js"></script>
 </body>
 </html>
