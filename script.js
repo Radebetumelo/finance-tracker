@@ -99,3 +99,10 @@ toggleLightMode.addEventListener("click", () => {
       }
     }
   });
+
+  const menuBTn = document.querySelector(".bx-menu");
+  const sideBar = document.querySelector(".sidebar");
+
+  menuBTn.addEventListener("click", () => {
+    sideBar.classList.toggle("view")
+  })
